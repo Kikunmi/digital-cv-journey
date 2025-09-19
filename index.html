@@ -211,6 +211,127 @@
     </main>
 
     <footer>
+      <!-- Contact -->
+      <section>
+        <h2>Contact Me</h2>
+
+        <!-- Contact Form -->
+        <form action="#">
+          <!-- Name Field -->
+          <div>
+            <label for="name">Name:</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="John Doe"
+            >
+          </div>
+
+          <!-- Email Field -->
+          <div>
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="John.Doe@example.com"
+            >
+          </div>
+
+          <!-- Organization URL -->
+          <div>
+            <label for="url">Organization url:</label>
+            <input
+                type="url"
+                id="url"
+                name="url"
+                placeholder="https://example.com"
+            >
+          </div>
+
+          <!-- Telephone -->
+          <div>
+            <label for="phone">Enter your phone number:</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                placeholder="Format: 123-456-7890"
+            >
+          </div>
+
+          <!-- Reason for Contact Dropdown -->
+          <div>
+            <label for="reason">Reason for Contact:</label>
+            <select
+                id="reason"
+                name="reason"
+            >
+              <option value="">--Please choose an option--</option>
+              <option value="job-offer">Job Offer</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="Mentorship">Mentorship</option>
+            </select>
+          </div>
+
+          <!-- Method of Contact -->
+          <fieldset>
+            <legend>Preferred Method of Contact?</legend>
+
+            <div>
+              <input
+                  type="checkbox"
+                  id="Phone"
+                  name="Telephone"
+                  value="Phone"
+              >
+              <label for="Phone">📞Phone </label>
+            </div>
+
+            <div>
+              <input
+                  type="checkbox"
+                  id="Email"
+                  name="Email Address"
+                  value="Email"
+              >
+              <label for="Email">📧Email</label>
+            </div>
+
+            <div>
+              <input
+                  type="checkbox"
+                  id="In-Person"
+                  name="In-Person Meeting"
+                  value="In-Person"
+              >
+              <label for="In-Person">In-Person</label>
+            </div>
+          </fieldset>
+
+          <!-- Detailed Message Text Area -->
+          <div>
+            <label for="message">Message:</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                cols="33"
+                required
+                placeholder="Kindly, share more context or specific information regarding your outreach..."
+            ></textarea>
+          </div>
+
+          <!-- Buttons -->
+          <button type="reset">Clear</button>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
       <!-- Connect -->
       <section>
         <p>Let's connect and discuss more about software engineering! Find me on:</p>
