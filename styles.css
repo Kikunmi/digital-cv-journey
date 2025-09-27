@@ -6,7 +6,7 @@ body
   font-size: 18px; /* Set a base font size */
   line-height: 2; /* Increase line height for better readability */
   color: #000000; /* Classic black color for the text */
-  background-color: #eee; /* Set White as background for the "Plain" appearance */
+  background-color: rgb(238, 238, 238); /* Set White as background for the "Plain" appearance */
 }
 
 /* Styling for main heading */
@@ -41,7 +41,7 @@ p
 a
 {
   text-decoration: none; /* Removing default underline from links */
-  color: #3f13dd; /* A slightly lighter shade for links for better distinction */
+  color: #2e9a40; /* A slightly lighter shade for links for better distinction */
 }
 
 /* Styling for list items */
