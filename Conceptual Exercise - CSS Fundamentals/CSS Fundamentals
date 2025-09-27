@@ -1,0 +1,81 @@
+# Question 1 ❓
+
+Explain how CSS differs from HTML in the context of web development.
+
+### Answer 🔑
+
+HTML (HyperText Markup Language) is primarily used to structure content on the web, defining elements like headings, paragraphs, lists, and more. It provides the skeletal structure of a webpage. On the other hand, CSS (Cascading Style Sheets) is used to style and layout this content. It determines how the elements are visually presented in terms of color, size, position, etc. In essence, while HTML gives the webpage its structure, CSS gives it its look and feel.
+
+# Question 2 ❓
+
+List the methods of including CSS in an HTML document and briefly describe each.
+
+### Answer 🔑
+
+- **Inline Styles**: CSS styles are applied directly to individual HTML elements using the `style` attribute. This method is not recommended for large-scale styling because it mixes content (HTML) with presentation (CSS).
+- **Internal (or Embedded) Styles**: CSS is written between `<style>` tags in the `<head>` section of an HTML document. This method is used for single-document styling.
+- **External Styles**: CSS is written in a separate file (typically with a .css extension) and is linked to the HTML document using the `<link>` tag. This is the preferred method for large websites because it allows for the separation of content and presentation, and styles can be reused across multiple pages.
+
+# Question 3 ❓
+
+Describe the anatomy of a CSS rule.
+
+### Answer 🔑
+
+A CSS rule consists of a **selector** and a **declaration block**. The selector specifies which HTML elements the styles will be applied to. The declaration block, enclosed in curly braces (`{}`), contains one or more declarations. Each declaration is a combination of a **property** and a **value**, separated by a colon (`:`) and terminated by a semicolon (`;`).
+
+# Question 4 ❓
+
+When might you want to use RGBA instead of RGB?
+
+### Answer 🔑
+
+You would use RGBA instead of RGB when you want to specify a color's opacity (transparency). The "A" in RGBA stands for "Alpha" and can take a value between 0 (completely transparent) and 1 (completely opaque).
+
+# Question 5 ❓
+
+How do Hex color values differ from RGB?
+
+### Answer 🔑
+
+Both Hex and RGB are ways to represent colors in CSS. RGB uses three values (one for each red, green, and blue component) that range from 0 to 255. Hex values, on the other hand, use six hexadecimal digits and are a representation of the RGB values. For example, the RGB value `rgb(255,0,0)` corresponds to the Hex value `#FF0000`, both representing the color red.
+
+# Question 6 ❓
+
+When might a developer prefer to use HSL over other color formats?
+
+### Answer 🔑
+
+HSL stands for Hue, Saturation, and Lightness. Developers might prefer HSL when they want more intuitive control over the color variations. Adjusting hue can change the actual color, adjusting saturation can move the color from gray to vivid, and adjusting lightness can make the color darker or lighter. It's especially useful for creating color schemes and variations of a specific color.
+
+# Question 7 ❓
+
+What are the primary text properties used in CSS to modify the appearance and layout of text?
+
+### Answer 🔑
+
+Some primary text properties include `color`, `font-family`, `font-size`, `font-weight`, `text-align`, `text-decoration`, `text-transform`, `line-height`, and `text-indent`.
+
+# Question 8 ❓
+
+In what scenarios might it be beneficial to use `vh` or `vw` as a unit for font size?
+
+### Answer 🔑
+
+`vh` (viewport height) and `vw` (viewport width) are relative to the size of the viewport. Using these units can be beneficial when you want text to be responsive to the size of the viewport. For instance, if you want a headline always to occupy a certain percentage of the viewport's width or height, using `vh` or `vw` can achieve that.
+
+# Question 9 ❓
+
+Explain the difference between `em` and `rem` units.
+
+### Answer 🔑
+
+Both `em` and `rem` are relative units in CSS. `em` is relative to the font size of its closest parent, whereas `rem` is relative to the root (usually the `<html>`) element's font size. This means if you have nested elements with font sizes specified in `em`, they can compound, while `rem` will always remain consistent relative to the root.
+
+# Question 10 ❓
+
+If multiple font families are listed in the font-family property, how does the browser decide which one to display?
+
+### Answer 🔑
+
+The browser will try to use the fonts in the order they are listed. If the first font is not available on the user's system or through linked font resources, the browser will attempt to use the next font in the list, and so on. It's a fallback mechanism to ensure that if a specific font isn't available, the text can still be displayed in an alternative font.
