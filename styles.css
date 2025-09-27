@@ -1,7 +1,8 @@
 /* Styling for the entire document */
 body
 {
-  font-family: 'Work Sans', /*'Helvetica Neue', Helvetica, Arial, sans-serif; /* Use Google Font for Work Sans Text Static look */
+  font-family: "Work Sans"; /* Use Google Font for Work Sans Text Static look */
+  /* font-family: 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
   font-size: 18px; /* Set a base font size */
   line-height: 2; /* Increase line height for better readability */
   color: #000000; /* Classic black color for the text */
