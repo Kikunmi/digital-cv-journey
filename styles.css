@@ -61,3 +61,10 @@ form
 {
   font-size: 0.9rem; /* Set the same font size as paragraphs */
 }
+
+/* Centering image */
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
