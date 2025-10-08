@@ -15,7 +15,7 @@ body
   padding: 2rem;
   color: #000000; /* Classic black color for the text */
   border: 2px solid #000000;
-  background-color: rgb(238, 238, 238); /* Set White as background for the "Plain" appearance */
+  background-color: #FEFFF0; /* Set White as background for the "Plain" appearance */
 }
 
 /* Styling for main heading */
