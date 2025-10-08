@@ -6,7 +6,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     >
-    <title>Akinkunmi Akindolire Digital CV</title>
+    <title>Akinkunmi Akindolire's Digital CV</title>
     <meta
         name="description"
         content="Digital CV of Akinkunmi Akindolire, a software engineer at Microsoft."
@@ -22,8 +22,6 @@
     >
   </head>
   <body>
-    <h1>🌐✨Curriculum Vitae!</h1>
-    <hr>
     <header>
       <!-- Introduction. -->
       <section>
@@ -31,23 +29,18 @@
         <img
             src="imgs/31952998.jpg"
             alt="Picture of Akinkunmi Akindolire"
-            width="auto"
+            width="250"
             class="border-dotted"
         >
         </div>
-        <div>
-        <h1>Akinkunmi Akindolire.</h1>
-        <ul>
-          <li>📍Location: Houston, Texas, USA.</li>
-          <li>💼Current Position: Digital Cloud Solution Architect at Microsoft.</li>
-          <li>🎓Education: Professional Certificate in Digital Transformation from Massachusetts Institute of Technology, USA.</li>
-          <li>🛠️Skills: Software Engineering, Microsoft Cloud Architecture, and AI Innovation in areas like Cloud Computing (Azure), DevOps, Programming (Python, JavaScript, C#), Web Development (HTML, CSS, React).</li>
-          <li>🌐Languages: English (Fluent), Yoruba (Native).</li>
-          <li>📚Certifications: Microsoft Certified: Azure Solutions Architect Expert.</li>
-          <li>🌟Interests: Cloud Architecture, AI & Machine Learning, Open Source Contribution, Tech Blogging.</li>
-          <li>📧Email: akgbedu2007@live.com.</li>
-          <li>📞Phone: +1 346 640 2451.</li>
-        </ul>
+        
+        <div class="name-container">
+          <h1>Akinkunmi Akindolire</h1>
+        </div>
+ 
+        <div class="information-container">
+          <p>Email: <a href="mailto:akgbedu2007@live.com">akgbedu2007@live.com</a></p>
+          <p>Phone: (346) 640 2451</p>
         </div>
         </section>
       </header>
@@ -74,9 +67,10 @@
       </section>
 
       <!-- Technologies. -->
-       
+       <section class="technologies">
         <h2>Technologies</h2>
 
+      <div class="container">
         <!-- Technologies: Web Development -->
         <div>
           <h3>Web Development</h3>
@@ -112,14 +106,16 @@
             <li>GitHub</li>
           </ul>
         </div>
-      
+      </div>
+      </section>
 
-      <!-- Solution Area -->
-      <section>
+    <!-- Solution Area -->
+    <section class="solution-area">
         <h2>Solution Area</h2>
         <caption>My expertise in various solution areas along with relevant certifications and proficiency levels.</caption> 
 
-        <!-- Solution Area Table -->
+      <!-- Solution Area Table -->
+      <div class="container">
         <table>
 
           <!-- Table Header: Indicates the columns in the table. -->
@@ -170,7 +166,8 @@
             </tr>
           </tbody>
         </table>
-      </section>
+      </div>
+    </section>
 
       <!-- Achievements -->
       <section>
@@ -184,55 +181,70 @@
       </section>
 
       <!-- Badges -->
-      <section>
+      <section class="badges">
         <h2>Badges</h2>
 
         <!-- Badge 1: SkillUp AI -->
-        <div>
+        <div class="badge-entry">
+         <div class="information-container">
           <h3><a href="https://github.com/Kikunmi/digital-cv-journey">SkillUp AI Badge.</a></h3>
-          <p>A badge that shows the project i worked on and my excellence.</p>
+          <p>A badge that showcase the hackathon i worked on and my excellence in executing the project.SkillUp AI: Agent Speed Skills was issued by The Microsoft Garage to Akinkunmi Akindolire. It demostrate a growth mindset.</p>
+        </div>
+        <div class="image-container">
           <img
               src="./imgs/skillup-ai-agent-speed-skills.png"
               alt="SkillUp AI Badge"
               width="200"
           >
         </div>
+      </div>
 
         <!-- Badge 2: AI Powered Learner Badge -->
-        <div>
+        <div class="badge-entry">
+         <div class="information-container">
           <h3><a href="https://github.com/Kikunmi/digital-cv-journey">AI Powered Learner Badge</a></h3>
-          <p>A badge that shows my proficiency in Artificial Intelligence.</p>
+          <p>A badge that shows my proficiency in Artificial Intelligence. AI Powered Learner Badge was issued by MCAPS to Akinkunmi Akindolire. This one was strategic to continous learning and improvement of Artificial Intelligence.</p>
+          </div>
+          <div class="image-container">
           <img
               src="./imgs/1756823784675-image-1756823784499.png"
               alt="AI Powered Learner Badge"
               width="200"
           >
         </div>
+      </div>
 
         <!-- Badge 3: Springboard Software Engineering Project Track Badge -->
-        <div>
+        <div class="badge-entry">
+        <div class="information-container">
           <h3><a href="https://github.com/Kikunmi/digital-cv-journey">Springboard Software Engineering Project Badge</a></h3>
-          <p>A badge that shows my commitment to Springboard Software Engineering project i'm working on..</p>
+          <p>A badge that shows my commitment to Springboard Software Engineering project i'm working on..This one is close to my heart because it's a strategic project that will contribute to the IT industry</p>
+        </div>
+        <div class="image-container">
           <img
               src="./imgs/1756753190449-image-1756753190321.png"
               alt="Springboard Software Engineering Project Badge"
               width="200"
           >
         </div>
+      </div>
 
+      <div class="message-container">
         <p><em>Stay tuned! Exciting projects are on the way as I progress through the Springboard course.</em></p>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
     <footer>
       <!-- Contact -->
       <section>
         <h2>Contact Me</h2>
 
+      <div class="form-container">
         <!-- Contact Form -->
         <form action="#">
           <!-- Name Field -->
-          <div>
+          <div class="text-input-container">
             <label for="name">Name:</label>
             <input
                 type="text"
@@ -240,11 +252,12 @@
                 name="name"
                 required
                 placeholder="John Doe"
+                class="input"
             >
           </div>
 
           <!-- Email Field -->
-          <div>
+          <div class="text-input-container">
             <label for="email">Email:</label>
             <input
                 type="email"
@@ -252,22 +265,24 @@
                 name="email"
                 required
                 placeholder="John.Doe@example.com"
+                class="input"
             >
           </div>
 
           <!-- Organization URL -->
-          <div>
+          <div class="url-input-container">
             <label for="url">Organization url:</label>
             <input
                 type="url"
                 id="url"
                 name="url"
                 placeholder="https://example.com"
+                class="input"
             >
           </div>
 
           <!-- Telephone -->
-          <div>
+          <div class="number-input-container">
             <label for="phone">Enter your phone number:</label>
             <input
                 type="tel"
@@ -275,11 +290,12 @@
                 name="phone"
                 required
                 placeholder="Format: 123-456-7890"
+                class="input"
             >
           </div>
 
           <!-- Reason for Contact Dropdown -->
-          <div>
+          <div class="select-container">
             <label for="reason">Reason for Contact:</label>
             <select
                 id="reason"
@@ -296,7 +312,7 @@
           <fieldset>
             <legend>Preferred Method of Contact?</legend>
 
-            <div>
+            <div class="checkbox-container">
               <input
                   type="checkbox"
                   id="Phone"
@@ -306,7 +322,7 @@
               <label for="Phone">📞Phone </label>
             </div>
 
-            <div>
+            <div class="checkbox-container">
               <input
                   type="checkbox"
                   id="Email"
@@ -316,7 +332,7 @@
               <label for="Email">📧Email</label>
             </div>
 
-            <div>
+            <div class="checkbox-container">
               <input
                   type="checkbox"
                   id="In-Person"
@@ -328,7 +344,7 @@
           </fieldset>
 
           <!-- Detailed Message Text Area -->
-          <div>
+          <div class="text-input-container">
             <label for="message">Message:</label>
             <textarea
                 id="message"
@@ -337,13 +353,17 @@
                 cols="33"
                 required
                 placeholder="Kindly, share more context or specific information regarding your outreach..."
+                class="input"
             ></textarea>
           </div>
 
           <!-- Buttons -->
+          <div class="button-container">
           <button type="reset">Clear</button>
           <button type="submit">Submit</button>
+          </div>
         </form>
+      </div>
       </section>
 
       <!-- Connect -->
