@@ -15,7 +15,7 @@ body
   padding: 2rem;
   color: #000000; /* Classic black color for the text */
   border: 2px solid #000000;
-  background-color: #FEFFF0; /* Set White as background for the "Plain" appearance */
+  background-color: lightgoldenrodyellow /* Set White as background for the "Plain" appearance */
 }
 
 /* Styling for main heading */
@@ -239,4 +239,101 @@ header section .information-container
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+/* === MOBILE OPTIMIZATION FOR 480px WIDTH === */
+@media (max-width: 480px) {
+  /* Adjust body font size and spacing for smaller screens */
+  body {
+    font-size: 14px; /* Reduce base font size for readability */
+    margin: 1rem; /* Reduce outer margin */
+    padding: 1rem; /* Reduce inner padding */
+  }
+
+  /* Stack header content vertically instead of horizontally */
+  header section {
+    flex-direction: column; /* Change layout to column for narrow screens */
+    height: auto; /* Remove fixed height for flexibility */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text for better presentation */
+  }
+
+  /* Resize profile image for mobile */
+  header section .image-container {
+    width: 10rem; /* Smaller image width */
+    height: 10rem; /* Smaller image height */
+    margin-bottom: 1rem; /* Add spacing below image */
+  }
+
+   /* Stack technology and solution sections vertically */
+  .technologies .container,
+  .solution-area .container,
+  .badge-entry {
+    flex-direction: column; /* Change layout to column */
+    align-items: center; /* Center items */
+    text-align: center; /* Center text */
+  }
+
+   /* Make form containers full width for better usability */
+  .contact .text-input-container,
+  .contact .select-container {
+    width: 100%; /* Full width on mobile */
+  }
+
+   /* Make input fields and select boxes responsive */
+  .contact .text-input-container input,
+  .contact .select-container select {
+    width: 100%; /* Full width for inputs */
+  }
+}
+
+/* Smooth hover effect for buttons */
+form button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+  background-color: #2e9a40;;
+  transform: scale(1.05);
+}
+
+/* === LINK HOVER ANIMATION === */
+a {
+  position: relative;
+  color: #2e9a40;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #2e9a40;
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%; /* Slide underline on hover */
+}
+
+/* === SMOOTH FADE-IN ANIMATION === */
+
+/* Define the keyframes for fade-in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly lower */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at normal position */
+  }
+}
+
+/* Apply animation to main and footer sections */
+main section,
+footer section {
+  animation: fadeIn 1s ease-in-out; /* Duration and easing */
 }
