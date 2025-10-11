@@ -16,6 +16,7 @@ body
   color: #000000; /* Classic black color for the text */
   border: 2px solid #000000;
   background-color: #EEE; /* Set White as background for the "Plain" appearance */
+  border-radius: 10px;
 }
 
 /* Styling for main heading */
