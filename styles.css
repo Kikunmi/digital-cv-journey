@@ -7,7 +7,7 @@
 /* Add margin, padding, and border to the `body`. */
 body
 {
-  font-family: Trebuchet MS; /* Use Google Font for Work Sans Text Static look */ /*Trebuchet MS
+  font-family: georgia; /* Use Google Font for Work Sans Text Static look */ /*Trebuchet MS
   /* font-family: 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
   font-size: 18px; /* Set a base font size */
   line-height: 2; /* Increase line height for better readability */
@@ -15,7 +15,7 @@ body
   padding: 2rem;
   color: #000000; /* Classic black color for the text */
   border: 2px solid #000000;
-  background-color: lightgoldenrodyellow /* Set White as background for the "Plain" appearance */
+  background-color:  #E0D4CE; /* Set White as background for the "Plain" appearance */
 }
 
 /* Styling for main heading */
